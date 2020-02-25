@@ -1,0 +1,14 @@
+/*Main*/
+@import "_global.scss";
+@import "_variable.scss";
+@import "_media.scss";
+
+/*Componets*/
+@import "./componets/";
+
+/*Sections*/
+@import "./sections/main";
+@import "./sections/about-me";
+@import "./sections/experience";
+@import "./sections/projects";
+@import "./sections/reviews";
