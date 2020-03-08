@@ -1,0 +1,29 @@
+.about-me{
+    margin: 50px 0;
+    background: $C-white;
+    .container{
+        justify-content: center;
+        align-items: center;
+        .image{
+            flex: 1;
+            width: 640px;
+            height: 640px;
+            img{
+                object-fit: cover;
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+        .text{
+            flex: 2;
+            padding: 50px;
+            td{
+                padding: 7px 40px 7px 0;
+                i{
+                    padding-right: 7px;
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}

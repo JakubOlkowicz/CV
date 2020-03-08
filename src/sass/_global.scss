@@ -1,0 +1,43 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: Poppins;
+    font-style: normal;
+    line-height: 28px;
+    font-weight: normal;
+  }
+  .container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0;
+    min-height: 690px;
+  }
+  .dark{
+      background: $C-main;
+      color: $C-light;
+  }
+  .light{
+    background: $C-light;
+    color: $C-main;
+  }
+  .titles{
+    width: 100%;
+    display: inline-block;
+
+    h5{
+      font-weight: 500;
+      font-size: 16px;
+      color: $C-special;
+      margin:10px 0;
+    }
+    h4{
+      font-weight: 600;
+      font-size: 28px;
+      color: $C-main;
+      margin:10px 0;
+    }
+  }
+  
