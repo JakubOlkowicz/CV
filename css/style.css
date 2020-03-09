@@ -41,7 +41,7 @@ body { margin: 0; font-family: Poppins; font-style: normal; line-height: 28px; f
 
 .about-me .container { -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
 
-.about-me .container .image { -ms-flex: 1; flex: 1; width: 430px; height: 430px; background: url(../../images/FB-Me.png); background-size: cover; }
+.about-me .container .image { -ms-flex: 1; flex: 1; width: 430px; height: 430px; background: url(../images/FB-Me.png); background-size: cover; }
 
 .about-me .container .text { -ms-flex: 2; flex: 2; padding: 50px; }
 
@@ -99,7 +99,7 @@ body { margin: 0; font-family: Poppins; font-style: normal; line-height: 28px; f
 
 .projects .container .project { margin: 50px 0; display: -ms-flexbox; display: flex; height: 500px; width: 500px; -ms-flex-direction: column; flex-direction: column; }
 
-.projects .container .project .project-image { height: 250px; -ms-flex-positive: 1; flex-grow: 1; background: url(../../images/Test.png); background-size: cover; }
+.projects .container .project .project-image { height: 250px; -ms-flex-positive: 1; flex-grow: 1; background: url(../images/Test.png); background-size: cover; }
 
 .projects .container .project .text { -ms-flex-align: center; align-items: center; height: 240px; padding: 10px 20px 10px 30px; -ms-flex-positive: 1; flex-grow: 1; background: linear-gradient(286.16deg, rgba(44, 85, 89, 0.15) 0.48%, rgba(44, 85, 89, 0.84) 100%); border: 1px solid rgba(255, 255, 255, 0.02); box-sizing: border-box; border-radius: 0px 0px 3px 3px; }
 
@@ -115,7 +115,7 @@ body { margin: 0; font-family: Poppins; font-style: normal; line-height: 28px; f
 
 .reviews .container .opinion .who { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; }
 
-.reviews .container .opinion .who .profil-1 { background: url(../../images/ceo2.jpg); width: 50px; height: 50px; border: 1px solid rgba(0, 0, 0, 0.05); border-radius: 39px; background-size: cover; float: left; margin-right: 39px; }
+.reviews .container .opinion .who .profil-1 { background: url(../images/ceo2.jpg); width: 50px; height: 50px; border: 1px solid rgba(0, 0, 0, 0.05); border-radius: 39px; background-size: cover; float: left; margin-right: 39px; }
 
 .reviews .container .opinion .who .name { line-height: initial; }
 
