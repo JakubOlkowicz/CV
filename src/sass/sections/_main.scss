@@ -9,10 +9,21 @@
             margin: 10px 5px 20px 5px;
             justify-content: flex-end;
             align-items: center;
-            span{
-                margin: 5px;
+            .navigation{
+                all: unset;
+                margin: 0 5px;
                 letter-spacing: 0.02em;
+                cursor: pointer;
+                padding: 5px;
+
+
             }
+            .navigation:hover{
+                cursor: pointer;
+                color: $C-white;
+                border-bottom: 2px solid $C-special;
+            }
+
             .btn{
                 all: unset;
                 margin: 5px;
@@ -20,6 +31,7 @@
                 color: $C-special;
                 border: $C-special solid 2px;
                 padding: 5px;
+                cursor: pointer;
             }
         }
         .welcom{
