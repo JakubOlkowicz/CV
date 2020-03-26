@@ -1,4 +1,5 @@
  .main{
+     height: 629px;
         .container{
         flex-direction: column;
         align-content: space-between;
@@ -6,16 +7,17 @@
             width: 100%;
             display: flex;
             flex-direction: row;
-            margin: 10px 5px 20px 5px;
+            margin: 20px 0 20px 0;
             justify-content: flex-end;
             align-items: center;
             .navigation{
                 all: unset;
-                margin: 0 5px;
+                margin: 0 10px;
                 letter-spacing: 0.02em;
                 cursor: pointer;
                 padding: 5px;
-
+                border-bottom: 2px solid transparent;
+                text-transform: uppercase;
 
             }
             .navigation:hover{
@@ -30,8 +32,9 @@
                 letter-spacing: 0.02em;
                 color: $C-special;
                 border: $C-special solid 2px;
-                padding: 5px;
+                padding: 8px 20px;
                 cursor: pointer;
+                text-transform: uppercase;
             }
         }
         .welcom{

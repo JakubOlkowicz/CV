@@ -35,9 +35,11 @@ $dot-diameter: 8px;
   }
   
   .entry {
+    display: flex;
     clear: both;
     text-align: left;
     position: relative;
+    justify-content: space-between;
     .title {
       margin-bottom: .5em;
       float: left;
@@ -50,7 +52,7 @@ $dot-diameter: 8px;
         position: absolute;
         width: $dot-diameter;
         height: $dot-diameter;
-        border: $border-width solid salmon;
+        border: $border-width solid $C-main;
         background-color:#fff;
         border-radius:100%;
         top: 15%;
