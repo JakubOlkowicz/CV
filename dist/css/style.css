@@ -12,9 +12,9 @@ body {
 .container {
   display: -ms-flexbox;
   display: flex;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 50px 70px;
-  min-height: 690px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -80,7 +80,7 @@ body {
 
 .main .container .navbar .navigation {
   all: unset;
-  margin: 0 10px;
+  margin: 0 7px;
   letter-spacing: 0.02em;
   cursor: pointer;
   padding: 5px;
@@ -100,12 +100,13 @@ body {
   letter-spacing: 0.02em;
   color: #A6958F;
   border: #A6958F solid 2px;
-  padding: 8px 20px;
+  padding: 5px 20px;
   cursor: pointer;
   text-transform: uppercase;
 }
 
 .main .container .welcom {
+  display: inline-block;
   width: 50%;
   margin: 50px 20px;
   padding: 50px;
@@ -116,6 +117,7 @@ body {
 }
 
 .main .container .welcom h1 {
+  display: inline;
   color: #FFFFFF;
   font-size: 50px;
 }
@@ -132,8 +134,8 @@ body {
 .about-me .container {
   -ms-flex-pack: center;
       justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
 }
 
 .about-me .container .image {
@@ -148,7 +150,7 @@ body {
 .about-me .container .text {
   -ms-flex: 2;
       flex: 2;
-  padding: 50px;
+  padding: 0 50px;
 }
 
 .about-me .container .text td {
@@ -237,6 +239,7 @@ body {
 
 .experience .container .work .job .right .down {
   padding: 5px;
+  padding-left: 20px;
   -ms-flex-positive: 0;
       flex-grow: 0;
   background: linear-gradient(270deg, rgba(104, 137, 140, 0.26) 0%, #243D40 100%);
@@ -250,8 +253,6 @@ body {
   margin: 10px;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: start;
-      align-items: flex-start;
   min-height: auto;
   padding: 5vh 50px;
   width: -webkit-min-content;
@@ -404,6 +405,15 @@ body {
   border: 2px solid #A6958F;
   border-radius: 33px;
   padding: 10px;
+  font-family: Poppins;
+}
+
+.reviews {
+  height: auto;
+}
+
+.reviews .container .titles {
+  padding-bottom: 20px;
 }
 
 .reviews .container .opinion {
@@ -416,6 +426,7 @@ body {
   width: 570px;
   height: 300px;
   padding: 20px;
+  box-sizing: border-box;
   background-color: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.06);
 }

@@ -3,7 +3,7 @@
     background: $C-white;
     .container{
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         .image{
             flex: 1;
             width: 430px;
@@ -13,7 +13,7 @@
         }
         .text{
             flex: 2;
-            padding: 50px;
+            padding: 0 50px;
             td{
                 padding: 7px 40px 7px 0;
                 i{

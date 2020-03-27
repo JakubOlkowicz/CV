@@ -12,7 +12,7 @@
             align-items: center;
             .navigation{
                 all: unset;
-                margin: 0 10px;
+                margin: 0 7px;
                 letter-spacing: 0.02em;
                 cursor: pointer;
                 padding: 5px;
@@ -32,12 +32,13 @@
                 letter-spacing: 0.02em;
                 color: $C-special;
                 border: $C-special solid 2px;
-                padding: 8px 20px;
+                padding: 5px 20px;
                 cursor: pointer;
                 text-transform: uppercase;
             }
         }
         .welcom{
+            display: inline-block;
             width: 50%;
             margin: 50px 20px;
             padding: 50px;
@@ -45,6 +46,7 @@
                 color: $C-special;
             }
             h1{
+                display: inline;
                 color: $C-white;
                 font-size: 50px;
             }
