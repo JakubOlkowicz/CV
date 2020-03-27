@@ -54,6 +54,116 @@ body {
   color: #243D40;
 }
 
+/*Componets*/
+.time-line {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  margin: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: auto;
+  padding: 5vh 50px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.time-line .timeline {
+  width: 100%;
+  max-width: 800px;
+  background: #fff;
+  padding: 100px 50px;
+  position: relative;
+}
+
+.time-line .timeline:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: calc(33% + 15px);
+  bottom: 0px;
+  width: 4px;
+  background: #ddd;
+}
+
+.time-line .timeline:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.time-line .entry {
+  display: -ms-flexbox;
+  display: flex;
+  clear: both;
+  text-align: left;
+  position: relative;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.time-line .entry .title {
+  margin-bottom: .5em;
+  float: left;
+  width: 33%;
+  padding-right: 30px;
+  text-align: right;
+  position: relative;
+}
+
+.time-line .entry .title:before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 4px solid #243D40;
+  background-color: #fff;
+  border-radius: 100%;
+  top: 15%;
+  right: -8px;
+  z-index: 99;
+}
+
+.time-line .entry .title h3 {
+  margin: 0;
+  font-size: 120%;
+}
+
+.time-line .entry .title p {
+  margin: 0;
+  font-size: 100%;
+}
+
+.time-line .entry .body {
+  margin: 0 0 3em;
+  float: right;
+  width: 66%;
+  padding-left: 30px;
+}
+
+.time-line .entry .body p {
+  line-height: 1.4em;
+}
+
+.time-line .entry .body p:first-child {
+  margin-top: 0;
+  font-weight: 400;
+}
+
+.time-line .entry .body ul {
+  color: #aaa;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.time-line .entry .body ul li:before {
+  content: "–";
+  margin-right: .5em;
+}
+
+/*Sections*/
 .main {
   height: 629px;
 }
@@ -225,16 +335,17 @@ body {
       align-content: center;
 }
 
-.experience .container .work .job .right .up p {
-  font-size: 18px;
-  padding: 0 0 10px 10px;
-  margin: 0;
-}
-
 .experience .container .work .job .right .up p:first-of-type {
   font-size: 12px;
   padding: 10px 0 5px 10px;
   color: #A6958F;
+}
+
+.experience .container .work .job .right .up p:first-of-type span {
+  font-size: 20px;
+  padding: 0 0 10px 10px;
+  margin: 0;
+  color: #FFFFFF;
 }
 
 .experience .container .work .job .right .down {
@@ -245,114 +356,6 @@ body {
   background: linear-gradient(270deg, rgba(104, 137, 140, 0.26) 0%, #243D40 100%);
   border-radius: 0px 0px 2px 0px;
   color: #A6958F;
-}
-
-.time-line {
-  -ms-flex-positive: 1;
-      flex-grow: 1;
-  margin: 10px;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: auto;
-  padding: 5vh 50px;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
-  -ms-flex-direction: column;
-      flex-direction: column;
-}
-
-.time-line .timeline {
-  width: 100%;
-  max-width: 800px;
-  background: #fff;
-  padding: 100px 50px;
-  position: relative;
-}
-
-.time-line .timeline:before {
-  content: '';
-  position: absolute;
-  top: 0px;
-  left: calc(33% + 15px);
-  bottom: 0px;
-  width: 4px;
-  background: #ddd;
-}
-
-.time-line .timeline:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-.time-line .entry {
-  display: -ms-flexbox;
-  display: flex;
-  clear: both;
-  text-align: left;
-  position: relative;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-}
-
-.time-line .entry .title {
-  margin-bottom: .5em;
-  float: left;
-  width: 33%;
-  padding-right: 30px;
-  text-align: right;
-  position: relative;
-}
-
-.time-line .entry .title:before {
-  content: '';
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  border: 4px solid #243D40;
-  background-color: #fff;
-  border-radius: 100%;
-  top: 15%;
-  right: -8px;
-  z-index: 99;
-}
-
-.time-line .entry .title h3 {
-  margin: 0;
-  font-size: 120%;
-}
-
-.time-line .entry .title p {
-  margin: 0;
-  font-size: 100%;
-}
-
-.time-line .entry .body {
-  margin: 0 0 3em;
-  float: right;
-  width: 66%;
-  padding-left: 30px;
-}
-
-.time-line .entry .body p {
-  line-height: 1.4em;
-}
-
-.time-line .entry .body p:first-child {
-  margin-top: 0;
-  font-weight: 400;
-}
-
-.time-line .entry .body ul {
-  color: #aaa;
-  padding-left: 0;
-  list-style-type: none;
-}
-
-.time-line .entry .body ul li:before {
-  content: "–";
-  margin-right: .5em;
 }
 
 .projects .container .project {
@@ -465,5 +468,122 @@ body {
 .reviews .container .opinion .who .name p {
   margin: 0;
   font-size: 12px;
+}
+
+/* Media */
+@media (max-width: 768px) {
+  p {
+    font-size: 13px;
+  }
+  tr {
+    font-size: 13px;
+  }
+  .titles h5 {
+    font-size: 13px;
+  }
+  .titles h3 {
+    font-size: 20px;
+  }
+  .main {
+    height: 429px;
+  }
+  .main .container {
+    padding: 25px 35px;
+  }
+  .main .container .navbar {
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin: 0 auto;
+  }
+  .main .container .navbar .navigation {
+    margin: 0 5px;
+    font-size: 13px;
+    padding: 5px 2px;
+  }
+  .main .container .navbar .btn {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+  .main .container .welcom {
+    margin-top: 20px;
+  }
+  .main .container .welcom h4 {
+    font-size: 13px;
+  }
+  .main .container .welcom h1 {
+    font-size: 25px;
+  }
+  .about-me {
+    margin: 25px 0;
+  }
+  .about-me .container {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .about-me .container .image {
+    width: 100%;
+  }
+  .experience .container .work .job {
+    width: 300px;
+    height: 100px;
+  }
+  .experience .container .work .job .left img {
+    width: 100px;
+    height: 100px;
+  }
+  .experience .container .work .job .right .up p:first-of-type {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+  }
+  .experience .container .work .job .right .up p:first-of-type span {
+    font-size: 16px;
+  }
+  .experience .container .work .job .right .down {
+    padding: 0;
+    padding-left: 20px;
+  }
+  .experience .container .work .job .right .down p {
+    font-size: 10px;
+  }
+  .experience .container .time-line {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .experience .container .time-line .entry .title h3 {
+    font-size: 90%;
+  }
+  .experience .container .time-line .entry .title p {
+    font-size: 60%;
+    margin: 0;
+  }
+  .experience .container .time-line .entry .body ul li {
+    font-size: 60%;
+  }
+  .projects .container {
+    padding: 30px 40px;
+  }
+  .projects .container .project {
+    width: 400px;
+    height: 400px;
+  }
+  .projects .container .project .text {
+    padding: 0;
+    padding-left: 15px;
+    padding-bottom: 10px;
+  }
+  .projects .container .project .text h5 {
+    margin: 15px 0;
+  }
+  .reviews .container .opinion {
+    height: auto;
+  }
+  .reviews .container .opinion .text {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .reviews .container .opinion .who {
+    margin-top: 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

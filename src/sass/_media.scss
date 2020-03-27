@@ -1,0 +1,143 @@
+@media (max-width: 768px) {
+    p{
+        font-size: 13px;
+    }
+    tr{
+        font-size: 13px;
+    }
+    .titles{
+        h5{
+            font-size: 13px;
+        }
+        h3{
+            font-size: 20px;
+        }
+    }
+    .main{
+        height: 429px;
+        .container{
+            padding: 25px 35px;
+            .navbar{
+                justify-content: center;
+                margin: 0 auto;
+                .navigation{
+                    margin: 0 5px;
+                    font-size: 13px;
+                    padding: 5px 2px;
+                }
+                .btn{
+                    font-size: 13px;
+                    padding: 5px 10px; 
+                }
+    
+            }
+            .welcom{
+                margin-top: 20px;
+                h4{
+                    font-size: 13px;
+                }
+                h1{
+                    font-size: 25px;
+                }
+            }
+        } 
+    }
+    .about-me{
+        margin: 25px 0;
+        .container{
+            flex-direction: column;
+            .image{
+                width: 100%;
+            }
+        }
+    }
+    .experience{
+        .container{
+            .work{
+                .job{
+                    width: 300px;
+                    height: 100px;
+                    .left{
+                        img{
+                            width: 100px;
+                            height: 100px;
+                        }
+                    }
+                    .right{
+                        .up{
+                            
+                            p:first-of-type{
+                                margin: 0;
+                                padding: 0;
+                                font-size: 10px;
+                                span{
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                        .down{
+                            padding: 0;
+                            padding-left: 20px;
+                            p{
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .time-line{
+                padding-left: 0;
+                padding-right: 0;
+                .entry{
+                    .title{
+                        h3{
+                            font-size: 90%;
+                        }
+                        p{
+                           font-size: 60%; 
+                           margin: 0;
+                        }
+                    }
+                    .body{
+                        ul{
+                            li{
+                                font-size: 60%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .projects{
+        .container{
+            padding: 30px 40px;
+            .project{
+                width: 400px;
+                height: 400px;        
+                .text{
+                    padding: 0;
+                    padding-left: 15px;
+                    padding-bottom: 10px;
+                    h5{
+                        margin: 15px 0;
+                    }
+                }
+            }
+        }
+    }
+    .reviews{
+        .container{
+            .opinion{
+                height: auto;
+                .text{
+                    font-size: 12px;
+                    line-height: 22px;
+                }
+                .who{
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}

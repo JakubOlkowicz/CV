@@ -37,15 +37,16 @@
                             background: $C-main;
                             flex-grow: 1;
                             align-content: center;
-                            p{
-                                font-size: 18px;
-                                padding: 0 0 10px 10px;
-                                margin: 0;
-                            }
                             p:first-of-type{
                                 font-size: 12px ;
                                 padding: 10px 0 5px 10px;
                                 color: $C-special;
+                                span{
+                                    font-size: 20px;
+                                    padding: 0 0 10px 10px;
+                                    margin: 0;
+                                    color: $C-white;
+                                }
                             }
                             
                         }
