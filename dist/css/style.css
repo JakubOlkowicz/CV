@@ -90,13 +90,13 @@ body {
   font-size: 14px;
 }
 
-.main .container .navbar .navigation:hover {
+.main .container .navbar .navigation:hover, .main .container .navbar :active, .main .container .navbar :visited {
   cursor: pointer;
   color: #FFFFFF;
   border-bottom: 2px solid #A6958F;
 }
 
-.main .container .navbar .navigation:focus {
+.main .container .navbar .active {
   cursor: pointer;
   color: #FFFFFF;
   border-bottom: 2px solid #A6958F;

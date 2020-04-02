@@ -21,12 +21,12 @@
                 font-size: 14px;
 
             }
-            .navigation:hover{
+            .navigation:hover,:active,:visited{
                 cursor: pointer;
                 color: $C-white;
                 border-bottom: 2px solid $C-special;
             }
-            .navigation:focus{
+            .active{
                 cursor: pointer;
                 color: $C-white;
                 border-bottom: 2px solid $C-special;

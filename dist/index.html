@@ -11,8 +11,8 @@
 <body>
     <section class="main dark" id="start">
         <div class="container">
-            <nav class="navbar">
-                <a href="#start" class="navigation">start</a>
+            <nav class="navbar" id="nav">
+                <a href="#start" class="navigation active">start</a>
                 <a href="#about" class="navigation">o mnie</a>
                 <a href="#experience" class="navigation">doświadczenie</a>
                 <a href="#projects" class="navigation">projekty</a>
@@ -182,5 +182,29 @@
         </div>
     </section>
     <footer class="dark"></footer>
+
+    <script>
+(function() {
+  'use strict';
+
+  var section = document.querySelectorAll("section");
+  var sections = {};
+  var i = 0;
+
+  Array.prototype.forEach.call(section, function(e) {
+    sections[e.id] = e.offsetTop;
+  });
+
+  window.onscroll = function() {
+    var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+    for (i in sections) {
+      if (sections[i] <= scrollPosition) {
+        document.querySelector('.active').setAttribute('class', 'navigation');
+        document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active navigation');
+      }
+    }
+  };
+})();    </script>
 </body>
 </html>
