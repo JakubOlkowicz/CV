@@ -7,6 +7,7 @@
             flex:  0;
             margin:10px 10px;
             padding-top: 5vh;
+            margin-left: 0;
             .job{
                 display: flex;
                 background: $C-main;
@@ -24,6 +25,11 @@
                             width: 200px;
                             height: 200px;
                             object-fit: fill;
+                        }
+                        #jelonki{
+                            width: 180px;
+                            height: 180px;
+                            padding: 10px;
                         }
                     }
                     .right{
@@ -56,7 +62,7 @@
                             flex-grow: 0;
                             background: linear-gradient(270deg, rgba(104, 137, 140, 0.26) 0%, #243D40 100%);
                             border-radius: 0px 0px 2px 0px;
-                            color: $C-special;
+                            color: $C-white;
                         }
                     }
                 

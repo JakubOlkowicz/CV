@@ -42,7 +42,7 @@ $dot-diameter: 8px;
     .title {
       margin-bottom: .5em;
       float: left;
-      width: 33%;
+      width: 40%;
       padding-right: $gutter;
       text-align: right;
       position: relative;
@@ -64,7 +64,7 @@ $dot-diameter: 8px;
       }
       p {
         margin: 0;
-        font-size: 100%;
+        font-size: 16px;
       }
     }
     .body {
@@ -73,13 +73,15 @@ $dot-diameter: 8px;
       width: 66%;
       padding-left: $gutter;
       p {
+        
         line-height: 1.4em;
         &:first-child {
           margin-top: 0;
-          font-weight: 400;
+          font-weight: 700;
         }
       }
       ul {
+        font-size: 14px;
         color:#aaa;
         padding-left: 0;
         list-style-type: none;

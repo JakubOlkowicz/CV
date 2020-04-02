@@ -2,9 +2,6 @@
 @import "_variable.scss";
 @import "_global.scss";
 
-/*Componets*/
-@import "./componets/time-line";
-
 /*Sections*/
 @import "./sections/main";
 @import "./sections/about-me";
@@ -14,3 +11,8 @@
 
 /* Media */
 @import "_media.scss";
+
+/*Componets*/
+@import "./componets/time-line";
+@import "./componets/_btn";
+

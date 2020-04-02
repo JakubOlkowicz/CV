@@ -14,12 +14,17 @@
         .text{
             flex: 2;
             padding: 0 50px;
-            td{
-                padding: 7px 40px 7px 0;
-                i{
-                    padding-right: 7px;
-                    padding-left: 0;
+            .story{
+                font-size: 16px;
+                td{
+                    font-size: 14px;
+                    padding: 7px 30px 7px 0;
+                    i{
+                        padding-right: 7px;
+                        padding-left: 0;
+                    }
                 }
+    
             }
         }
     }
