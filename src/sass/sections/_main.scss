@@ -19,12 +19,16 @@
                 border-bottom: 2px solid transparent;
                 text-transform: uppercase;
                 font-size: 14px;
+                transition-duration: 0.5s;
+                transition-timing-function: ease-in-out;
 
             }
             .navigation:hover,:active,:visited{
                 cursor: pointer;
                 color: $C-white;
                 border-bottom: 2px solid $C-special;
+                transition-duration: 0.5s;
+                transition-timing-function: ease-in-out;
             }
             .active{
                 cursor: pointer;

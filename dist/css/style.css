@@ -9,6 +9,11 @@ body {
   font-weight: normal;
 }
 
+body *:hover {
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
 .container {
   display: -ms-flexbox;
   display: flex;
@@ -88,12 +93,16 @@ body {
   border-bottom: 2px solid transparent;
   text-transform: uppercase;
   font-size: 14px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 .main .container .navbar .navigation:hover, .main .container .navbar :active, .main .container .navbar :visited {
   cursor: pointer;
   color: #FFFFFF;
   border-bottom: 2px solid #A6958F;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 .main .container .navbar .active {
@@ -155,6 +164,7 @@ body {
 }
 
 .about-me .container .text .story td {
+  text-transform: uppercase;
   font-size: 14px;
   padding: 7px 30px 7px 0;
 }
@@ -258,28 +268,35 @@ body {
 }
 
 .projects .container .project {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.projects .container .project .project-box {
   margin: 50px 0;
   display: -ms-flexbox;
   display: flex;
-  height: 500px;
-  width: 500px;
   -ms-flex-direction: column;
       flex-direction: column;
+  width: 500px;
 }
 
-.projects .container .project .project-image {
-  height: 250px;
+.projects .container .project .project-box .project-image {
+  min-height: 250px;
   -ms-flex-positive: 1;
       flex-grow: 1;
   background: url(../images/Test.png);
   background-size: cover;
 }
 
-.projects .container .project .text {
+.projects .container .project .project-box .text {
   -ms-flex-align: center;
       align-items: center;
-  height: auto;
-  padding: 10px 20px 10px 30px;
+  max-height: 250px;
+  padding-left: 20px;
+  padding-bottom: 10px;
   -ms-flex-positive: 1;
       flex-grow: 1;
   background: linear-gradient(286.16deg, rgba(44, 85, 89, 0.15) 0.48%, rgba(44, 85, 89, 0.84) 100%);
@@ -288,60 +305,86 @@ body {
   border-radius: 0px 0px 3px 3px;
 }
 
-.projects .container .project .text h5 {
-  margin: 20px 0;
+.projects .container .project .project-box .text h5 {
+  margin: 15px 0;
   font-weight: 600;
   font-size: 20px;
   color: #FFFFFF;
 }
 
-.projects .container .project .text p {
-  margin-bottom: 20px;
-  font-size: 14px;
+.projects .container .project .project-box .text p {
+  margin-bottom: 15px;
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.7);
 }
 
-.projects .container .project .text .btn {
+.projects .container .project .project-box .text .btn {
   padding: 0;
   border: none;
   background: none;
   color: #FFFFFF;
   border: 2px solid #A6958F;
   border-radius: 33px;
-  padding: 10px 30px;
+  padding: 5px 25px;
   font-family: Poppins;
+  font-size: 14px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.projects .container .project .project-box .text .btn:hover {
+  border: 2px solid #FFFFFF;
+  color: #A6958F;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 .reviews {
   height: auto;
 }
 
+.reviews .container {
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
 .reviews .container .titles {
   padding-bottom: 20px;
 }
 
-.reviews .container .opinion {
+.reviews .container .opinions {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.reviews .container .opinions .opinion {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  width: 570px;
+  max-width: 400px;
   height: auto;
   padding: 25px;
   padding-bottom: 0;
   box-sizing: border-box;
   background-color: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.06);
+  margin: 0 20px 20px 20px;
 }
 
-.reviews .container .opinion .text p {
+.reviews .container .opinions .opinion .text p {
   color: #525252;
   font-size: 14px;
 }
 
-.reviews .container .opinion .who {
+.reviews .container .opinions .opinion .who {
   margin: 25px 0;
   display: -ms-flexbox;
   display: flex;
@@ -349,7 +392,7 @@ body {
       align-items: center;
 }
 
-.reviews .container .opinion .who .profil-1 {
+.reviews .container .opinions .opinion .who .profil-1 {
   background: url(../images/ceo2.jpg);
   width: 50px;
   height: 50px;
@@ -360,15 +403,26 @@ body {
   margin-right: 39px;
 }
 
-.reviews .container .opinion .who .name {
+.reviews .container .opinions .opinion .who .profil-2 {
+  background: url(../images/cyber.png);
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 39px;
+  background-size: cover;
+  float: left;
+  margin-right: 39px;
+}
+
+.reviews .container .opinions .opinion .who .name {
   line-height: initial;
 }
 
-.reviews .container .opinion .who .name h5 {
+.reviews .container .opinions .opinion .who .name h5 {
   margin: 0;
 }
 
-.reviews .container .opinion .who .name p {
+.reviews .container .opinions .opinion .who .name p {
   margin: 0;
   font-size: 12px;
 }
@@ -391,24 +445,29 @@ body {
     height: 429px;
   }
   .main .container {
-    padding: 25px 35px;
+    padding: 25px 10px;
   }
   .main .container .navbar {
     -ms-flex-pack: center;
         justify-content: center;
     margin: 0 auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .main .container .navbar .navigation {
-    margin: 0 5px;
-    font-size: 13px;
-    padding: 5px 2px;
+    margin: 0;
+    font-size: 12px;
+    padding: 5px 5px;
+    letter-spacing: 0;
   }
   .main .container .navbar .btn {
-    font-size: 13px;
+    font-size: 12px;
     padding: 5px 10px;
   }
   .main .container .welcom {
     margin-top: 20px;
+    width: 70%;
+    padding: 0;
   }
   .main .container .welcom h4 {
     font-size: 13px;
@@ -420,14 +479,26 @@ body {
     margin: 25px 0;
   }
   .about-me .container {
+    padding: 25px 35px;
     -ms-flex-direction: column;
         flex-direction: column;
   }
   .about-me .container .image {
     width: 100%;
   }
+  .about-me .container .text {
+    padding: 0;
+  }
+  .experience .container {
+    padding: 25px 15px;
+  }
+  .experience .container .work {
+    margin-left: 0;
+    margin: 0 auto;
+  }
   .experience .container .work .job {
-    width: 300px;
+    min-width: 300px;
+    width: auto;
     height: 100px;
   }
   .experience .container .work .job .left img {
@@ -455,8 +526,12 @@ body {
     font-size: 10px;
   }
   .experience .container .time-line {
+    margin-top: 25px;
     padding-left: 0;
     padding-right: 0;
+  }
+  .experience .container .time-line .entry .title {
+    width: 50%;
   }
   .experience .container .time-line .entry .title h3 {
     font-size: 90%;
@@ -469,19 +544,43 @@ body {
     font-size: 60%;
   }
   .projects .container {
-    padding: 30px 40px;
+    padding: 25px 35px;
   }
   .projects .container .project {
-    width: 400px;
-    height: 400px;
+    margin: 0 auto;
   }
-  .projects .container .project .text {
+  .projects .container .project .project-box {
+    padding-top: 20px;
+    width: auto;
+  }
+  .projects .container .project .project-box .project-image {
+    max-width: 350px;
+    width: auto;
+    height: 225px;
+  }
+  .projects .container .project .project-box .text {
+    max-width: 350px;
+    width: auto;
+    height: auto;
     padding: 0;
     padding-left: 15px;
     padding-bottom: 10px;
   }
-  .projects .container .project .text h5 {
-    margin: 15px 0;
+  .projects .container .project .project-box .text h5 {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  .projects .container .project .project-box .text p {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  .projects .container .project .project-box .text .btn {
+    font-size: 11px;
+    margin: 0;
+    padding: 0 5px;
+  }
+  .reviews .container {
+    padding: 25px 35px;
   }
   .reviews .container .opinion {
     height: auto;
@@ -611,20 +710,19 @@ body {
   letter-spacing: 0.02em;
   color: #A6958F;
   border: #A6958F solid 2px;
-  padding: 10px 30px;
+  padding: 5px 15px;
   border-radius: 33px;
   cursor: pointer;
   text-transform: uppercase;
   display: inline-block;
   vertical-align: middle;
-  transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  transition-duration: 0.3s;
-  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 .btn:hover {
-  transform: scale(1.1) rotate(4deg);
   color: #FFFFFF;
+  border: #FFFFFF solid 2px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -16,23 +16,27 @@
     .main{
         height: 429px;
         .container{
-            padding: 25px 35px;
+            padding: 25px 10px;
             .navbar{
                 justify-content: center;
                 margin: 0 auto;
+                flex-wrap: wrap;
                 .navigation{
-                    margin: 0 5px;
-                    font-size: 13px;
-                    padding: 5px 2px;
+                    margin: 0;
+                    font-size: 12px;
+                    padding: 5px 5px;
+                    letter-spacing: 0;
                 }
                 .btn{
-                    font-size: 13px;
+                    font-size: 12px;
                     padding: 5px 10px; 
                 }
     
             }
             .welcom{
                 margin-top: 20px;
+                width: 70%;
+                padding: 0 ;
                 h4{
                     font-size: 13px;
                 }
@@ -45,17 +49,25 @@
     .about-me{
         margin: 25px 0;
         .container{
+            padding: 25px 35px;
             flex-direction: column;
             .image{
                 width: 100%;
+            }
+            .text{
+                padding: 0;
             }
         }
     }
     .experience{
         .container{
+            padding: 25px 15px;
             .work{
+                margin-left: 0;
+                margin: 0 auto;
                 .job{
-                    width: 300px;
+                    min-width: 300px;
+                    width: auto;
                     height: 100px;
                     .left{
                         img{
@@ -91,10 +103,12 @@
                 }
             }
             .time-line{
+                margin-top: 25px;
                 padding-left: 0;
                 padding-right: 0;
                 .entry{
                     .title{
+                        width: 50%;
                         h3{
                             font-size: 90%;
                         }
@@ -116,16 +130,37 @@
     }
     .projects{
         .container{
-            padding: 30px 40px;
+            padding: 25px 35px;
             .project{
-                width: 400px;
-                height: 400px;        
-                .text{
-                    padding: 0;
-                    padding-left: 15px;
-                    padding-bottom: 10px;
-                    h5{
-                        margin: 15px 0;
+                margin: 0 auto;
+                .project-box{
+                    padding-top: 20px;
+                    width: auto;
+                    .project-image{
+                        max-width: 350px;
+                        width: auto;
+                        height: 225px;
+                    }       
+                    .text{
+                        max-width: 350px;
+                        width: auto;
+                        height: auto;
+                        padding: 0;
+                        padding-left: 15px;
+                        padding-bottom: 10px;
+                        h5{
+                            font-size: 16px;
+                            margin: 10px 0;
+                        }
+                        p{
+                            margin: 10px 0;
+                            font-size: 14px;
+                        }
+                        .btn{
+                            font-size: 11px;
+                            margin: 0;
+                            padding:0 5px;
+                        }
                     }
                 }
             }
@@ -133,6 +168,7 @@
     }
     .reviews{
         .container{
+            padding: 25px 35px;
             .opinion{
                 height: auto;
                 .text{

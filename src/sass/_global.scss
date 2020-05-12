@@ -1,18 +1,22 @@
-  body {
-    margin: 0;
-    font-family: Poppins;
-    font-style: normal;
-    line-height: 28px;
-    font-weight: normal;
+body {
+  margin: 0;
+  font-family: Poppins;
+  font-style: normal;
+  line-height: 28px;
+  font-weight: normal;
+  *:hover{
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
   }
-  .container {
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 50px 70px;
-    flex-wrap: wrap;
-  }
-  .titles{
+}
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 70px;
+  flex-wrap: wrap;
+}
+.titles{
     width: 100%;
     display: inline-block;
 
@@ -28,8 +32,8 @@
       color: $C-main;
       margin:10px 0;
     }
-  }
-  .dark{
+}
+.dark{
       width: 100%;
       background: $C-main;
       color: $C-light;
@@ -38,10 +42,10 @@
           color: $C-white
         }
       }
-  }
-  .light{
+}
+.light{
     width: 100%;
     background: $C-light;
     color: $C-main;
-  }
+}
   
