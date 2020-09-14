@@ -1,0 +1,24 @@
+menu.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: $C-white;
+    margin: 45px 0;
+    padding: 20px;
+    > div{
+        display: flex;
+        flex-direction: column;
+    }
+    a.nav{
+        all: unset;
+        font-size: 40px;
+        font-weight: 900;
+        margin: 0 auto;
+        color: $C-font;
+        padding: 10px 0;
+        &.active{
+            color: $C-special;
+        }
+        }
+}

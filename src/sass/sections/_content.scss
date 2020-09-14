@@ -1,0 +1,10 @@
+.content{
+    background: $C-white;
+    margin: 45px 0;
+    width: 55%;
+    padding: 25px 35px;
+    overflow: scroll;
+    & > article {
+        display: none;
+    }
+}

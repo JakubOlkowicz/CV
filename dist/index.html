@@ -9,225 +9,156 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <section class="main dark" id="start">
-        <div class="container">
-            <nav class="navbar" id="nav">
-                <a href="#start" class="navigation active">start</a>
-                <a href="#about" class="navigation">o mnie</a>
-                <a href="#experience" class="navigation">doświadczenie</a>
-                <a href="#projects" class="navigation">projekty</a>
-                <a href="#reviews" class="navigation">opinie</a>
-                <button class="btn contact">kontakt</button>
-            </nav>
-            <div class="welcom">
-                <h4>Hej, nazywam się</h4> 
-                <h1>Jakub Olkowicz</h1>
-                <p>Jestem Junior Frontend Developer z ponad 3-letnim doświadczeniem jako trener kompetencji cyfrowych. Uczyłem myślenia algorytmicznego i rozwijałem umiejętności programistyczne u najmłodszych.</p>
+    <main class="main">
+        <menu class="menu">
+            <div class="navigation">
+                <a href="#" class="nav active" id="me">
+                    <i class="fas fa-user"></i>
+                </a>
+                <a href="#" class="nav" id="skills">
+                    <i class="fas fa-code"></i>
+                </a>
+                <a href="#" class="nav" id="jobs">
+                    <i class="fas fa-user-graduate"></i>
+                </a>
+                <a href="#" class="nav" id="projects">
+                    <i class="fas fa-briefcase"></i>
+                </a>
+                <a href="#" class="nav" id="opinion">
+                    <i class="fas fa-users"></i>
+                </a>
             </div>
-        </div>
-    </section>
-    <section class="about-me light" id="about">
-        <div class="container">
-            <div class="image">
+            <div class="download">
+                <a href="#" class="nav">
+                    <i class="fas fa-cloud-download-alt"></i>
+                </a>
             </div>
-            <div class="text">
-                <div class="titles">
-                    <h5>O mnie</h5>
-                    <h3>Opowiem wam o sobie</h3>
-                </div>
-                <div class="story">
-                    <p>
-                        Już od najmłodszych lat interesowały mnie komputery i gry, a obecnie
-                        programowanie i cyberbezpieczeństwo. Lubię wyzwania, a programowanie umożliwia mi stałe mierzenie się z coraz nowymi problemami.
-                        Cechuje mnie samodzielność i chęć do nauki, co sprawia, że cały czas się rozwijam i nie stoje w miejscu.
-                        Jestem kreatywny i nie boje się zmian, lubię poznawać nowych ludzi i nowe miejsca.
-                        Moją pasją jest nie tylko programowanie, ale także psychologia i sporty, jak sztuki walki oraz jazda konna.
-                        Staram się czerpać z każdego dnia najwięcej jak się da.
-                    </p>
-                    <p>
-                        Stack technologiczny, którym dysponuje i nieustannie rozwijam: 
-                    </p>
-                    <table >
-                        <tbody>
-                            <tr>
-                                <td> <i class="far fa-check-circle"></i>html / css / sass</td>
-                                <td> <i class="far fa-check-circle"></i>javascript</td>
-                            </tr>
-                            <tr>
-                                <td> <i class="far fa-check-circle"></i>react / redux</td>
-                                <td> <i class="far fa-check-circle"></i>bootstrap</td>
-                            </tr>
-                            <tr>
-                                <td> <i class="far fa-check-circle"></i>material ui</td>
-                                <td> <i class="far fa-check-circle"></i>github / git bash</td>
-                            </tr>
-                            <tr>
-                                <td> <i class="far fa-check-circle"></i>wordpress</td>
-                                <td> <i class="far fa-check-circle"></i>gamemaker language</td>
-                            </tr>
-                        </tbody>
-                    </table>
+        </menu>
+        <section class="me">
+            <div class="img">
+                <div class="text">
+                    <h3>Jakub Olkowicz</h3>
+                    <span>junior developer</span>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="experience light" id="experience">
-        <div class="container">
-            <div class="titles">
-                <h5>Moje doświadczenie</h5>
-                <h3>Praca i edukacja</h3>
-            </div>
-            <div class="work">
-                <div class="job">
-                    <div class="left">
-                        <img src="./images/Edume1.png" alt="Edu-Me">
-                    </div>
-                    <div class="right">
-                        <div class="up">
-                            <p>2019 - 2020
-                                <span>Edu-Me</span>
-                            </p>
-                        </div>
-                        <div class="down">
-                            <p>Trener Kompetencji Cyfrowych</p>
-                        </div>
-                    </div>    
-                </div>
-                <div class="job">
-                    <div class="left">
-                        <img id="jelonki" src="./images/cyber2.png" alt="CyberJelonki">
-                    </div>
-                    <div class="right">
-                        <div class="up">
-                            <p>2017 - 2019
-                                <span>CyberJelonki</span>
-                            </p>
-                            
-                        </div>
-                        <div class="down">
-                            <p>Trener Kompetencji Cyfrowych</p>
-                        </div>
-                    </div>    
-                </div>
-            </div>
-            <div class="time-line">
-                <div class="entry">
-                    <div class="title">
-                      <h3>2019 - 2020</h3>
-                      <p>Kodilla</p>
-                    </div>
-                    <div class="body">
-                      <p>Kurs Web Developer</p>
-                      <ul>
-                        <li>Rerum sit libero possimus amet excepturi</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="entry">
-                    <div class="title">
-                      <h3>2014 - 2018</h3>
-                      <p>ZSLiZ nr.2 w Jeleniej Górze</p>
-                    </div>
-                    <div class="body">
-                      <p>Technik Żywienia i Usług Gastronomicznych</p>
-                      <ul>
-                        <li>Rerum sit libero possimus amet excepturi</li>
-                      </ul>
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </section>
-    <section class="projects dark" id="projects">
-        <div class="container">
-            <div class="titles">
-                <h5>Klienci</h5>
-                <h3>Wykonane Projekty</h3>
-            </div>
-            <div class="project">
-                <div class="project-box">
-                    <div class="project-image">
-                    </div>
-                    <div class="text">
-                        <h5>Furniture Shop</h5>
-                        <p>Jest to projekt zespołowy wykonywany przeze mnie a także czterech innych deweleperów. Praca przy tym projekcie opierała się przede wszystkim na korzystaniu z react'a oraz redux'a
+        </section>
+        <section class="content">
+            <article class="about" id="me">
+                <div class="container">
+                    <h2 class="title">O Mnie</h2>
+                    <div class="text-about">
+                        <h2>Hej, jestem Jakub</h2>
+                        <p>Jestem Junior Frontend Developer z ponad 3-letnim doświadczeniem jako
+                            trener kompetencji cyfrowych. Uczyłem myślenia 
+                            algorytmicznego i rozwijałem umiejętności programistyczne u najmłodszych.
                         </p>
-                        <a target="_blank" href="https://wonderful-poitras-780108.netlify.app/" class="btn">Zobacz strone</a>    
+                        <p>Już od najmłodszych lat interesowały mnie komputery oraz gry, 
+                            a obecnie programowanie i cyberbezpieczeństwo. 
+                            Lubię wyzwania, a programowanie umożliwia mi stałe mierzenie się z coraz nowymi problemami.
+                            Cechuje mnie samodzielność i chęć do nauki, co sprawia, że cały czas się rozwijam i nie stoje w miejscu. 
+                            Jestem kreatywny i nie boje się zmian, lubię poznawać nowych ludzi i nowe miejsca. 
+                            Moją pasją jest nie tylko programowanie, ale także psychologia i sporty, jak sztuki walki oraz jazda konna. 
+                        </p>
                     </div>
+                    <h2 class="title">
+                        Umiejętności i Technologie, które cały czas rozwijam
+                    </h2>
+                    <div class="skill">
+                        <span class="skill-title">Języki Programowania i Fremworki</span>
+                        <p>HTML i CSS</p>
+                        <p>JavaScript</p>
+                        <p>SASS</p>
+                        <p>React</p>
+                        <p>Redux</p>
+                        <p>Material UI</p>
+                        <p>Bootstrap</p>
+                        <p>NodeJS</p>
+                        <p>PHP</p>
+                        <p>Gamemaker Laungeu</p>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-title ">Narzędzia i Systemy</span>
+                        <p>Wordpress</p>
+                        <p>Woocommerce</p>
+                        <p>Visual Code Studio</p>
+                        <p>GIT</p>
+                        <p>Npm</p>
+                        <p>Webpack</p>
+                        <p>Bash</p>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-title">Umiejętności Miękie</span>
+                        <p>Komunikatywność</p>
+                        <p>Szybkie przyswajanie wiedzy</p>
+                        <p>Umiejętność pracy w grupie</p>
+                        <p>Praca pod presją czasu</p>
+                    </div>    
                 </div>
-        </div>
-    </div>
-    </section>
-    <section class="reviews light" id="reviews">
-        <div class="container">
-            <div class="titles">
-                <h5>Co o mnie sądzą?</h5>
-                <h3>Opinie o mnie</h3>
-            </div>
-            <div class="opinions">
-                <div class="opinion">
-                    <div class="text">
-                        Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.
-                        Maecenas malesuada elit lectus felis, 
-                        malesuada ultricies. Curabitur et ligula.
-                        Ut molestie a, ultricies porta urna. 
-                        Vestibulum commodo volutpat a, convallis
-                        ac, laoreet enim. Phasellus fermentum in,
-                        dolor. Pellentesque facilisis.
-                        Nulla imperdiet sit amet magna.
-                        Vestibulum dapibus, mauris nec malesuada fames.
-                    </div>
-                    <div class="who">
-                        <div class="profil-1"></div>
-                        <div class="name">
-                            <h5>Jakub Jadczak</h5>
-                            <p>CEO Esumo sp.z o.o.</p>
+            </article>
+            <article class="jobs" id="jobs">
+                <div class="container">
+                    <div class="work">
+                        <h2 class="title">
+                            <i class="fas fa-briefcase"></i>
+                            Doświadczenie</h2>
+                        <div class="list">
+                            <span>2019-2020</span>
+                            <h3>Edu-Me, trener kompetemcji cyfrowych</h3>
+                            <span>Wrocłak</span>
+                            <p>Robiłem to i tamto</p>
+                        </div>
+                        <div class="list">
+                            <span>2019-2020</span>
+                            <h3>Edu-Me, trener kompetemcji cyfrowych</h3>
+                            <span>Wrocłak</span>
+                            <p>Robiłem to i tamto</p>
                         </div>
                     </div>
-                </div>
-                <div class="opinion">
-                    <div class="text">
-                        Pan Jakub Olkowicz 
-                        zawsze wywiązywał się z powierzonych mu zadań na czas i zgodnie z moimi oczekiwaniami.
-                        Podejmował siętakże funkcji reprezentacyjnej, która nie sprawiała mu trudności. Z łatwością nawiązywał kontakty z gronem pedagogicznym szkół podstawowych
-                        Pan Jakub jest pracownikiem godnym zaufania. Niejednokrotnie powierzyłem mu samochód i sprzęt firmowy.
-                        Jako pracownik cechuje go sumienność, dokłądność, samodzielność i odpowiedzialność
-                    </div>
-                    <div class="who">
-                        <div class="profil-2"></div>
-                        <div class="name">
-                            <h5>Mariusz Wierzchoń</h5>
-                            <p>CyberJelonki</p>
+                    <div class="school">
+                        <h2 class="title">
+                            <i class="fas fa-user-graduate"></i>
+                            Edukacja</h2>
+                        <div class="list">
+                            <span>2019-2020</span>
+                            <h3>Web Developer</h3>
+                            <span>Kodilla</span>
+                            <p>Nauczyłem się tego i tamtego</p>
                         </div>
+                        <div class="list">
+                            <span>2014-2018</span>
+                            <h3>Technik Żywienia i Usług Gastronomicznych</h3>
+                            <span>ZSLiZ nr.2 Jelenia Góra</span>
+                            <p>Mogę wam gotować</p>
+                        </div>    
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <footer class="dark"></footer>
-
-    <script>
-(function() {
-  'use strict';
-
-  var section = document.querySelectorAll("section");
-  var sections = {};
-  var i = 0;
-
-  Array.prototype.forEach.call(section, function(e) {
-    sections[e.id] = e.offsetTop;
-  });
-
-  window.onscroll = function() {
-    var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-
-    for (i in sections) {
-      if (sections[i] <= scrollPosition) {
-        document.querySelector('.active').setAttribute('class', 'navigation');
-        document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active navigation');
-      }
-    }
-  };
-})();    </script>
+            </article>
+            <article class="projects view">
+                <h2 class="title">Moje Projekty</h2>
+                <div class="container">
+                    <a href="https://source.unsplash.com/600x600/?sig=1" data-lightbox="homePortfolio">
+                        <div class="text">
+                            <h3>Projekt 1</h3>
+                            <span>Wordpress</span>
+                            <p>Zrobiłem strone</p>
+                        </div>
+                        <img src="https://source.unsplash.com/600x600/?sig=1"/>
+                    </a>
+                      
+                    <a href="https://source.unsplash.com/600x800/?sig=12" data-lightbox="homePortfolio" class="vertical">
+                        <img src="https://source.unsplash.com/600x800/?sig=12"/>
+                    </a>
+                  
+                    <a href="https://source.unsplash.com/800x600/?sig=71" data-lightbox="homePortfolio" class="horizontal">
+                        <img src="https://source.unsplash.com/800x600/?sig=71"/>
+                    </a>
+                      
+                    <a href="https://source.unsplash.com/600x600/?sig=40" data-lightbox="homePortfolio">
+                        <img src="https://source.unsplash.com/600x600/?sig=40"/>
+                    </a>
+                </div>
+            </article>
+        </section>
+    </main>
 </body>
 </html>

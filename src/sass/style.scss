@@ -1,18 +1,20 @@
 /*Main*/
 @import "_variable.scss";
-@import "_global.scss";
 
 /*Sections*/
-@import "./sections/main";
-@import "./sections/about-me";
-@import "./sections/experience";
-@import "./sections/projects";
-@import "./sections/reviews";
+@import "./sections/menu";
+@import "./sections/me";
+@import "./sections/content";
+// @import "./sections/projects";
+// @import "./sections/reviews";
 
-/* Media */
-@import "_media.scss";
+// /* Media */
+// @import "_media.scss";
 
-/*Componets*/
-@import "./componets/time-line";
-@import "./componets/_btn";
+// /*Componets*/
+@import "./articles/_about";
+@import "./articles/_jobs";
+@import "./articles/_projects";
 
+
+@import "_global.scss";
